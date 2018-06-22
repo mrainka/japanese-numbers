@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EEDA879020DD86230011601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA878F20DD86230011601F /* AppDelegate.swift */; };
 		EEDA879220DD86230011601F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA879120DD86230011601F /* ViewController.swift */; };
-		EEDA879520DD86230011601F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDA879320DD86230011601F /* Main.storyboard */; };
 		EEDA879720DD86250011601F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDA879620DD86250011601F /* Assets.xcassets */; };
 		EEDA879A20DD86250011601F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDA879820DD86250011601F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		EEDA878C20DD86230011601F /* JapaneseNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDA878F20DD86230011601F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEDA879120DD86230011601F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EEDA879420DD86230011601F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEDA879620DD86250011601F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEDA879920DD86250011601F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEDA879B20DD86250011601F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			children = (
 				EEDA878F20DD86230011601F /* AppDelegate.swift */,
 				EEDA879120DD86230011601F /* ViewController.swift */,
-				EEDA879320DD86230011601F /* Main.storyboard */,
 				EEDA879620DD86250011601F /* Assets.xcassets */,
 				EEDA879820DD86250011601F /* LaunchScreen.storyboard */,
 				EEDA879B20DD86250011601F /* Info.plist */,
@@ -124,7 +121,6 @@
 			files = (
 				EEDA879A20DD86250011601F /* LaunchScreen.storyboard in Resources */,
 				EEDA879720DD86250011601F /* Assets.xcassets in Resources */,
-				EEDA879520DD86230011601F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,14 +139,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EEDA879320DD86230011601F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEDA879420DD86230011601F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EEDA879820DD86250011601F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -12,6 +12,23 @@ import UIKit
 final class AppDelegate: UIResponder {
 
     var window: UIWindow?
+
+    private func addWindow() {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = ViewController()
+        window.makeKeyAndVisible()
+        self.window = window
+    }
 }
 
-extension AppDelegate: UIApplicationDelegate {}
+extension AppDelegate: UIApplicationDelegate {
+
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil)
+            -> Bool
+    {
+        addWindow()
+        return true
+    }
+}
