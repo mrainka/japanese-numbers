@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE5668DB20DD90FE0081066D /* JapaneseNumbersUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5668DA20DD90FE0081066D /* JapaneseNumbersUnitTests.swift */; };
 		EEDA879020DD86230011601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA878F20DD86230011601F /* AppDelegate.swift */; };
 		EEDA879220DD86230011601F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA879120DD86230011601F /* ViewController.swift */; };
 		EEDA879720DD86250011601F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDA879620DD86250011601F /* Assets.xcassets */; };
 		EEDA879A20DD86250011601F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDA879820DD86250011601F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EE5668DD20DD90FE0081066D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEDA878420DD86230011601F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEDA878B20DD86230011601F;
+			remoteInfo = JapaneseNumbers;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		EE5668D820DD90FE0081066D /* JapaneseNumbersUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseNumbersUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5668DA20DD90FE0081066D /* JapaneseNumbersUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseNumbersUnitTests.swift; sourceTree = "<group>"; };
+		EE5668DC20DD90FE0081066D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEDA878C20DD86230011601F /* JapaneseNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDA878F20DD86230011601F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEDA879120DD86230011601F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,6 +37,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EE5668D520DD90FE0081066D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEDA878920DD86230011601F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,10 +54,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE5668D920DD90FE0081066D /* JapaneseNumbersUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE5668DA20DD90FE0081066D /* JapaneseNumbersUnitTests.swift */,
+				EE5668DC20DD90FE0081066D /* Info.plist */,
+			);
+			path = JapaneseNumbersUnitTests;
+			sourceTree = "<group>";
+		};
 		EEDA878320DD86230011601F = {
 			isa = PBXGroup;
 			children = (
 				EEDA878E20DD86230011601F /* JapaneseNumbers */,
+				EE5668D920DD90FE0081066D /* JapaneseNumbersUnitTests */,
 				EEDA878D20DD86230011601F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				EEDA878C20DD86230011601F /* JapaneseNumbers.app */,
+				EE5668D820DD90FE0081066D /* JapaneseNumbersUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +96,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EE5668D720DD90FE0081066D /* JapaneseNumbersUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE5668E120DD90FE0081066D /* Build configuration list for PBXNativeTarget "JapaneseNumbersUnitTests" */;
+			buildPhases = (
+				EE5668D420DD90FE0081066D /* Sources */,
+				EE5668D520DD90FE0081066D /* Frameworks */,
+				EE5668D620DD90FE0081066D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE5668DE20DD90FE0081066D /* PBXTargetDependency */,
+			);
+			name = JapaneseNumbersUnitTests;
+			productName = JapaneseNumbersUnitTests;
+			productReference = EE5668D820DD90FE0081066D /* JapaneseNumbersUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EEDA878B20DD86230011601F /* JapaneseNumbers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEDA879E20DD86250011601F /* Build configuration list for PBXNativeTarget "JapaneseNumbers" */;
@@ -91,6 +141,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Marcin Rainka";
 				TargetAttributes = {
+					EE5668D720DD90FE0081066D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EEDA878B20DD86230011601F;
+					};
 					EEDA878B20DD86230011601F = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -110,11 +164,19 @@
 			projectRoot = "";
 			targets = (
 				EEDA878B20DD86230011601F /* JapaneseNumbers */,
+				EE5668D720DD90FE0081066D /* JapaneseNumbersUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EE5668D620DD90FE0081066D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEDA878A20DD86230011601F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +189,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EE5668D420DD90FE0081066D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5668DB20DD90FE0081066D /* JapaneseNumbersUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEDA878820DD86230011601F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +207,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE5668DE20DD90FE0081066D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEDA878B20DD86230011601F /* JapaneseNumbers */;
+			targetProxy = EE5668DD20DD90FE0081066D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EEDA879820DD86250011601F /* LaunchScreen.storyboard */ = {
@@ -150,6 +228,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EE5668DF20DD90FE0081066D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SBXCK5YYV;
+				INFOPLIST_FILE = JapaneseNumbersUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcinrainka.JapaneseNumbersUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseNumbers.app/JapaneseNumbers";
+			};
+			name = Debug;
+		};
+		EE5668E020DD90FE0081066D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SBXCK5YYV;
+				INFOPLIST_FILE = JapaneseNumbersUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcinrainka.JapaneseNumbersUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseNumbers.app/JapaneseNumbers";
+			};
+			name = Release;
+		};
 		EEDA879C20DD86250011601F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -303,6 +423,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EE5668E120DD90FE0081066D /* Build configuration list for PBXNativeTarget "JapaneseNumbersUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5668DF20DD90FE0081066D /* Debug */,
+				EE5668E020DD90FE0081066D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EEDA878720DD86230011601F /* Build configuration list for PBXProject "JapaneseNumbers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
