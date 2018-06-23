@@ -30,6 +30,7 @@ final class ListedJapaneseNumberView: CustomView {
 
     private func addLabel() {
         let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 28)
         addSubview(label)
         self.label = label
     }

@@ -42,6 +42,9 @@
 		EEE05BE520DE6A3A007FE328 /* UIImageViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BE420DE6A3A007FE328 /* UIImageViewConfiguration.swift */; };
 		EEE05BE720DE6CF2007FE328 /* CellReuseIdentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BE620DE6CF2007FE328 /* CellReuseIdentification.swift */; };
 		EEE05BEA20DE6F16007FE328 /* CellDequeuingAndRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BE920DE6F16007FE328 /* CellDequeuingAndRegistration.swift */; };
+		EEE05BEC20DE79E0007FE328 /* Itemization.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BEB20DE79E0007FE328 /* Itemization.swift */; };
+		EEE05BEE20DE7A8F007FE328 /* JapaneseNumbersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BED20DE7A8F007FE328 /* JapaneseNumbersViewModel.swift */; };
+		EEE05BF120DE852B007FE328 /* CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BF020DE852B007FE328 /* CellConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,9 @@
 		EEE05BE420DE6A3A007FE328 /* UIImageViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewConfiguration.swift; sourceTree = "<group>"; };
 		EEE05BE620DE6CF2007FE328 /* CellReuseIdentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReuseIdentification.swift; sourceTree = "<group>"; };
 		EEE05BE920DE6F16007FE328 /* CellDequeuingAndRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDequeuingAndRegistration.swift; sourceTree = "<group>"; };
+		EEE05BEB20DE79E0007FE328 /* Itemization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itemization.swift; sourceTree = "<group>"; };
+		EEE05BED20DE7A8F007FE328 /* JapaneseNumbersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseNumbersViewModel.swift; sourceTree = "<group>"; };
+		EEE05BF020DE852B007FE328 /* CellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,7 @@
 		EE9E7DD920DE642600CFE6ED /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EEE05BED20DE7A8F007FE328 /* JapaneseNumbersViewModel.swift */,
 				EE9E7DDA20DE648C00CFE6ED /* ListedJapaneseNumberViewModel.swift */,
 			);
 			path = ViewModels;
@@ -289,7 +296,7 @@
 		EEE05BE320DE69DA007FE328 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				EEE05BE920DE6F16007FE328 /* CellDequeuingAndRegistration.swift */,
+				EEE05BEF20DE851A007FE328 /* Cell */,
 				EE9E7DD220DE5F0000CFE6ED /* CustomViewContainer.swift */,
 				EEE05BE420DE6A3A007FE328 /* UIImageViewConfiguration.swift */,
 			);
@@ -301,8 +308,18 @@
 			children = (
 				EEE05BE620DE6CF2007FE328 /* CellReuseIdentification.swift */,
 				EE9E7DD820DE63A500CFE6ED /* Configuration */,
+				EEE05BEB20DE79E0007FE328 /* Itemization.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EEE05BEF20DE851A007FE328 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEE05BF020DE852B007FE328 /* CellConfiguration.swift */,
+				EEE05BE920DE6F16007FE328 /* CellDequeuingAndRegistration.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,8 +511,11 @@
 				EEB1575F20DE294900BA980A /* AnyRepository.swift in Sources */,
 				EEB1576F20DE3F9500BA980A /* JapaneseNumberCell.swift in Sources */,
 				EEB1576C20DE3B7F00BA980A /* CustomTableViewCell.swift in Sources */,
+				EEE05BEC20DE79E0007FE328 /* Itemization.swift in Sources */,
+				EEE05BEE20DE7A8F007FE328 /* JapaneseNumbersViewModel.swift in Sources */,
 				EEB1576820DE32C200BA980A /* ListedJapaneseNumberView.swift in Sources */,
 				EEB1577120DE411700BA980A /* CustomViewController.swift in Sources */,
+				EEE05BF120DE852B007FE328 /* CellConfiguration.swift in Sources */,
 				EEB1575820DE28B700BA980A /* RepositoryQueryResult.swift in Sources */,
 				EEB1576120DE2A6800BA980A /* JapaneseNumbersSpecification.swift in Sources */,
 				EEDA879020DD86230011601F /* AppDelegate.swift in Sources */,

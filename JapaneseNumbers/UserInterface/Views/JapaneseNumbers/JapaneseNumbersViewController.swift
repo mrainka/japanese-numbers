@@ -6,4 +6,12 @@
 //  Copyright © 2018 Marcin Rainka. All rights reserved.
 //
 
-final class JapaneseNumbersViewController: CustomViewController<JapaneseNumbersView> {}
+final class JapaneseNumbersViewController: CustomViewController<JapaneseNumbersView> {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        model?.fetchItems()
+    }
+}
+
+extension JapaneseNumbersViewController: ModelConfigurable {}

@@ -8,17 +8,34 @@
 
 import UIKit
 
-final class JapaneseNumbersTableViewDataSourceAndDelegate: NSObject {}
+final class JapaneseNumbersTableViewDataSourceAndDelegate: NSObject {
 
-extension JapaneseNumbersTableViewDataSourceAndDelegate: UITableViewDelegate {}
+    private(set) var model: JapaneseNumbersViewModel?
+}
+
+extension JapaneseNumbersTableViewDataSourceAndDelegate: ModelConfigurable {
+
+    func configure(with model: JapaneseNumbersViewModel) {
+        self.model = model
+    }
+}
+
+extension JapaneseNumbersTableViewDataSourceAndDelegate: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let item = model?.item(forCellAt: indexPath) else { return }
+        cell.configureIfPossible(with: item)
+    }
+}
 
 extension JapaneseNumbersTableViewDataSourceAndDelegate: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return .init()
+        guard let item = model?.item(forCellAt: indexPath) else { return .init() }
+        return tableView.dequeueReusableCell(with: item, for: indexPath)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return model?.numberOfItems ?? 0
     }
 }

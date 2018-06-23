@@ -15,7 +15,9 @@ final class AppDelegate: UIResponder {
 
     private func addWindow() {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = JapaneseNumbersViewController()
+        let rootView = JapaneseNumbersViewController()
+        rootView.configure(with: .init())
+        window.rootViewController = rootView
         window.makeKeyAndVisible()
         self.window = window
     }

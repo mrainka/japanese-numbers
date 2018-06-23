@@ -46,3 +46,13 @@ final class JapaneseNumbersView: CustomView {
         })
     }
 }
+
+extension JapaneseNumbersView: ModelConfigurable {
+
+    var model: JapaneseNumbersViewModel? { return tableViewDataSourceAndDelegate.model }
+
+    func configure(with model: JapaneseNumbersViewModel) {
+        model.onItemsFetched = { [unowned self] in self.tableView.reloadData() }
+        tableViewDataSourceAndDelegate.configure(with: model)
+    }
+}
