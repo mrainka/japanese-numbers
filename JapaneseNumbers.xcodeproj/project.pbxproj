@@ -13,6 +13,15 @@
 		EEB1574920DE188100BA980A /* JapaneseNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1574820DE188100BA980A /* JapaneseNumber.swift */; };
 		EEB1574B20DE18E300BA980A /* ListedJapaneseNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1574A20DE18E300BA980A /* ListedJapaneseNumber.swift */; };
 		EEB1574D20DE1B7600BA980A /* IndividualJapaneseNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1574C20DE1B7600BA980A /* IndividualJapaneseNumber.swift */; };
+		EEB1575020DE1DDD00BA980A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1574F20DE1DDD00BA980A /* Repository.swift */; };
+		EEB1575320DE283E00BA980A /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1575220DE283E00BA980A /* NetworkRepository.swift */; };
+		EEB1575620DE287900BA980A /* NetworkRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1575520DE287900BA980A /* NetworkRoute.swift */; };
+		EEB1575820DE28B700BA980A /* RepositoryQueryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1575720DE28B700BA980A /* RepositoryQueryResult.swift */; };
+		EEB1575B20DE28F000BA980A /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1575A20DE28F000BA980A /* Specification.swift */; };
+		EEB1575D20DE290900BA980A /* NetworkSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1575C20DE290900BA980A /* NetworkSpecification.swift */; };
+		EEB1575F20DE294900BA980A /* AnyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1575E20DE294900BA980A /* AnyRepository.swift */; };
+		EEB1576120DE2A6800BA980A /* JapaneseNumbersSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1576020DE2A6800BA980A /* JapaneseNumbersSpecification.swift */; };
+		EEB1576320DE2AD000BA980A /* JapaneseNumberSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1576220DE2AD000BA980A /* JapaneseNumberSpecification.swift */; };
 		EEDA879020DD86230011601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA878F20DD86230011601F /* AppDelegate.swift */; };
 		EEDA879220DD86230011601F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA879120DD86230011601F /* ViewController.swift */; };
 		EEDA879720DD86250011601F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDA879620DD86250011601F /* Assets.xcassets */; };
@@ -42,6 +51,15 @@
 		EEB1574820DE188100BA980A /* JapaneseNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseNumber.swift; sourceTree = "<group>"; };
 		EEB1574A20DE18E300BA980A /* ListedJapaneseNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListedJapaneseNumber.swift; sourceTree = "<group>"; };
 		EEB1574C20DE1B7600BA980A /* IndividualJapaneseNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualJapaneseNumber.swift; sourceTree = "<group>"; };
+		EEB1574F20DE1DDD00BA980A /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		EEB1575220DE283E00BA980A /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
+		EEB1575520DE287900BA980A /* NetworkRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRoute.swift; sourceTree = "<group>"; };
+		EEB1575720DE28B700BA980A /* RepositoryQueryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryQueryResult.swift; sourceTree = "<group>"; };
+		EEB1575A20DE28F000BA980A /* Specification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
+		EEB1575C20DE290900BA980A /* NetworkSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpecification.swift; sourceTree = "<group>"; };
+		EEB1575E20DE294900BA980A /* AnyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRepository.swift; sourceTree = "<group>"; };
+		EEB1576020DE2A6800BA980A /* JapaneseNumbersSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseNumbersSpecification.swift; sourceTree = "<group>"; };
+		EEB1576220DE2AD000BA980A /* JapaneseNumberSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseNumberSpecification.swift; sourceTree = "<group>"; };
 		EEDA878C20DD86230011601F /* JapaneseNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDA878F20DD86230011601F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEDA879120DD86230011601F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +127,38 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		EEB1574E20DE1CBC00BA980A /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				EEB1575520DE287900BA980A /* NetworkRoute.swift */,
+				EEB1575120DE282A00BA980A /* Repositories */,
+				EEB1575920DE28D300BA980A /* Specifications */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		EEB1575120DE282A00BA980A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EEB1574F20DE1DDD00BA980A /* Repository.swift */,
+				EEB1575720DE28B700BA980A /* RepositoryQueryResult.swift */,
+				EEB1575E20DE294900BA980A /* AnyRepository.swift */,
+				EEB1575220DE283E00BA980A /* NetworkRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		EEB1575920DE28D300BA980A /* Specifications */ = {
+			isa = PBXGroup;
+			children = (
+				EEB1575A20DE28F000BA980A /* Specification.swift */,
+				EEB1575C20DE290900BA980A /* NetworkSpecification.swift */,
+				EEB1576220DE2AD000BA980A /* JapaneseNumberSpecification.swift */,
+				EEB1576020DE2A6800BA980A /* JapaneseNumbersSpecification.swift */,
+			);
+			path = Specifications;
+			sourceTree = "<group>";
+		};
 		EEDA878320DD86230011601F = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				EEDA878F20DD86230011601F /* AppDelegate.swift */,
+				EEB1574E20DE1CBC00BA980A /* DataAccess */,
 				EEB1574720DE179400BA980A /* Models */,
 				EEDA879120DD86230011601F /* ViewController.swift */,
 				EEDA879620DD86250011601F /* Assets.xcassets */,
@@ -291,11 +342,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEB1575320DE283E00BA980A /* NetworkRepository.swift in Sources */,
+				EEB1575B20DE28F000BA980A /* Specification.swift in Sources */,
 				EEDA879220DD86230011601F /* ViewController.swift in Sources */,
 				EEB1574920DE188100BA980A /* JapaneseNumber.swift in Sources */,
 				EEB1574B20DE18E300BA980A /* ListedJapaneseNumber.swift in Sources */,
+				EEB1576320DE2AD000BA980A /* JapaneseNumberSpecification.swift in Sources */,
 				EEB1574D20DE1B7600BA980A /* IndividualJapaneseNumber.swift in Sources */,
+				EEB1575F20DE294900BA980A /* AnyRepository.swift in Sources */,
+				EEB1575820DE28B700BA980A /* RepositoryQueryResult.swift in Sources */,
+				EEB1576120DE2A6800BA980A /* JapaneseNumbersSpecification.swift in Sources */,
 				EEDA879020DD86230011601F /* AppDelegate.swift in Sources */,
+				EEB1575620DE287900BA980A /* NetworkRoute.swift in Sources */,
+				EEB1575020DE1DDD00BA980A /* Repository.swift in Sources */,
+				EEB1575D20DE290900BA980A /* NetworkSpecification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
