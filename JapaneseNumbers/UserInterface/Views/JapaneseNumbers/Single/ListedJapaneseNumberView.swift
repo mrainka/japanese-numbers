@@ -10,6 +10,8 @@ import UIKit
 
 final class ListedJapaneseNumberView: CustomView {
 
+    private(set) var model: ListedJapaneseNumberViewModel?
+
     private(set) weak var image: UIImageView!
     private(set) weak var label: UILabel!
 
@@ -91,5 +93,15 @@ final class ListedJapaneseNumberView: CustomView {
                 multiplier: 1,
                 constant: 50)
         })
+    }
+}
+
+extension ListedJapaneseNumberView: ModelConfigurable {
+
+    func configure(with model: ListedJapaneseNumberViewModel) {
+        self.model = model
+
+        image.configure(with: model.imageURL)
+        label.text = model.label
     }
 }

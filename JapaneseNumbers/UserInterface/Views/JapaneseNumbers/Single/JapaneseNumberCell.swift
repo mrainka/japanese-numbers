@@ -12,3 +12,5 @@ final class JapaneseNumberCell: CustomTableViewCell<ListedJapaneseNumberView> {
 
     override class var inset: UIEdgeInsets { return .init(top: 8, left: 16, bottom: 8, right: 16) }
 }
+
+extension JapaneseNumberCell: ModelConfigurable {}

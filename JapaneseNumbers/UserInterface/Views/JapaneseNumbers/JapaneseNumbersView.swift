@@ -22,6 +22,8 @@ final class JapaneseNumbersView: CustomView {
         tableView.delegate = tableViewDataSourceAndDelegate
         tableView.rowHeight = 80
 
+        tableView.register(JapaneseNumberCell.self)
+
         addSubview(tableView)
 
         self.tableView = tableView

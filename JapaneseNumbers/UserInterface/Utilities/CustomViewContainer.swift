@@ -14,3 +14,12 @@ protocol CustomViewContainer {
 
     var customView: CustomViewType! { get }
 }
+
+extension ModelConfigurable where Self: CustomViewContainer, Self.CustomViewType: ModelConfigurable {
+
+    var model: CustomViewType.ModelType? { return customView.model }
+
+    func configure(with model: CustomViewType.ModelType) {
+        customView.configure(with: model)
+    }
+}
