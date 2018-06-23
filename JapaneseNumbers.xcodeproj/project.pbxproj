@@ -10,6 +10,7 @@
 		C99FB4D139EEDD884587DF3B /* Pods_JapaneseNumbersUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E540C22477BC9DA6572445D6 /* Pods_JapaneseNumbersUnitTests.framework */; };
 		CEEADC9741CF1D878230EC6F /* Pods_JapaneseNumbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58D420FC74E25D93FFEBF90 /* Pods_JapaneseNumbers.framework */; };
 		EE5668DB20DD90FE0081066D /* JapaneseNumbersUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5668DA20DD90FE0081066D /* JapaneseNumbersUnitTests.swift */; };
+		EE9A6C9020DE9CAD00D3E5F6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9A6C8F20DE9CAD00D3E5F6 /* Colors.swift */; };
 		EE9E7DD320DE5F0000CFE6ED /* CustomViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E7DD220DE5F0000CFE6ED /* CustomViewContainer.swift */; };
 		EE9E7DD520DE61FE00CFE6ED /* InitialConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E7DD420DE61FE00CFE6ED /* InitialConfiguration.swift */; };
 		EE9E7DD720DE63A200CFE6ED /* ModelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E7DD620DE63A200CFE6ED /* ModelConfiguration.swift */; };
@@ -67,6 +68,7 @@
 		EE5668D820DD90FE0081066D /* JapaneseNumbersUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseNumbersUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5668DA20DD90FE0081066D /* JapaneseNumbersUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseNumbersUnitTests.swift; sourceTree = "<group>"; };
 		EE5668DC20DD90FE0081066D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9A6C8F20DE9CAD00D3E5F6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		EE9E7DD220DE5F0000CFE6ED /* CustomViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewContainer.swift; sourceTree = "<group>"; };
 		EE9E7DD420DE61FE00CFE6ED /* InitialConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialConfiguration.swift; sourceTree = "<group>"; };
 		EE9E7DD620DE63A200CFE6ED /* ModelConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConfiguration.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				EEE05BE320DE69DA007FE328 /* Utilities */,
+				EE9A6C8F20DE9CAD00D3E5F6 /* Colors.swift */,
 				EEB1576420DE317500BA980A /* Views */,
 			);
 			path = UserInterface;
@@ -517,6 +520,7 @@
 				EEB1577120DE411700BA980A /* CustomViewController.swift in Sources */,
 				EEE05BF120DE852B007FE328 /* CellConfiguration.swift in Sources */,
 				EEB1575820DE28B700BA980A /* RepositoryQueryResult.swift in Sources */,
+				EE9A6C9020DE9CAD00D3E5F6 /* Colors.swift in Sources */,
 				EEB1576120DE2A6800BA980A /* JapaneseNumbersSpecification.swift in Sources */,
 				EEDA879020DD86230011601F /* AppDelegate.swift in Sources */,
 				EEB1575620DE287900BA980A /* NetworkRoute.swift in Sources */,

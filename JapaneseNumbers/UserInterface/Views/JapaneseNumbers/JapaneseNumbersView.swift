@@ -34,9 +34,11 @@ final class JapaneseNumbersView: CustomView {
     private func addTableView() {
         let tableView = UITableView(frame: .zero)
 
+        tableView.backgroundColor = .veryLightGray
         tableView.dataSource = tableViewDataSourceAndDelegate
         tableView.delegate = tableViewDataSourceAndDelegate
         tableView.rowHeight = 80
+        tableView.separatorColor = .gray
 
         tableView.register(JapaneseNumberCell.self)
 

@@ -22,6 +22,14 @@ extension JapaneseNumbersTableViewDataSourceAndDelegate: ModelConfigurable {
 
 extension JapaneseNumbersTableViewDataSourceAndDelegate: UITableViewDelegate {
 
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.isHighlighted = true
+    }
+
+    func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.isHighlighted = false
+    }
+
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard let item = model?.item(forCellAt: indexPath) else { return }
         cell.configureIfPossible(with: item)
