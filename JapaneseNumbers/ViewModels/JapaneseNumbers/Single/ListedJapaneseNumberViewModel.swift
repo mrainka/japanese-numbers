@@ -22,3 +22,5 @@ struct ListedJapaneseNumberViewModel {
 }
 
 extension ListedJapaneseNumberViewModel: CellReuseIdentifiable {}
+
+extension ListedJapaneseNumberViewModel: JapaneseNumberViewModel {}

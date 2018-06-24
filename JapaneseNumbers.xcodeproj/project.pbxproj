@@ -10,6 +10,12 @@
 		C99FB4D139EEDD884587DF3B /* Pods_JapaneseNumbersUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E540C22477BC9DA6572445D6 /* Pods_JapaneseNumbersUnitTests.framework */; };
 		CEEADC9741CF1D878230EC6F /* Pods_JapaneseNumbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58D420FC74E25D93FFEBF90 /* Pods_JapaneseNumbers.framework */; };
 		EE5668DB20DD90FE0081066D /* JapaneseNumbersUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5668DA20DD90FE0081066D /* JapaneseNumbersUnitTests.swift */; };
+		EE93F0B720DF6B49008EA2D7 /* IndividualJapaneseNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F0B620DF6B49008EA2D7 /* IndividualJapaneseNumberView.swift */; };
+		EE93F0B920DF6B76008EA2D7 /* IndividualJapaneseNumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE93F0B820DF6B76008EA2D7 /* IndividualJapaneseNumberView.xib */; };
+		EE93F0BB20DF70C9008EA2D7 /* IndividualJapaneseNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F0BA20DF70C9008EA2D7 /* IndividualJapaneseNumberViewModel.swift */; };
+		EE93F0BD20DF7773008EA2D7 /* IndividualJapaneseNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F0BC20DF7773008EA2D7 /* IndividualJapaneseNumberViewController.swift */; };
+		EE93F0C120DF812B008EA2D7 /* JapaneseNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F0C020DF812B008EA2D7 /* JapaneseNumberViewModel.swift */; };
+		EE93F0C520DF81DF008EA2D7 /* JapaneseNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F0C420DF81DF008EA2D7 /* JapaneseNumberView.swift */; };
 		EE9A6C9020DE9CAD00D3E5F6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9A6C8F20DE9CAD00D3E5F6 /* Colors.swift */; };
 		EE9E7DD320DE5F0000CFE6ED /* CustomViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E7DD220DE5F0000CFE6ED /* CustomViewContainer.swift */; };
 		EE9E7DD520DE61FE00CFE6ED /* InitialConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E7DD420DE61FE00CFE6ED /* InitialConfiguration.swift */; };
@@ -40,6 +46,7 @@
 		EEDA879220DD86230011601F /* JapaneseNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA879120DD86230011601F /* JapaneseNumbersViewController.swift */; };
 		EEDA879720DD86250011601F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDA879620DD86250011601F /* Assets.xcassets */; };
 		EEDA879A20DD86250011601F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDA879820DD86250011601F /* LaunchScreen.storyboard */; };
+		EEDB1F9D20DF832B00FE5694 /* ActivityIndicableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB1F9C20DF832B00FE5694 /* ActivityIndicableView.swift */; };
 		EEE05BE520DE6A3A007FE328 /* UIImageViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BE420DE6A3A007FE328 /* UIImageViewConfiguration.swift */; };
 		EEE05BE720DE6CF2007FE328 /* CellReuseIdentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BE620DE6CF2007FE328 /* CellReuseIdentification.swift */; };
 		EEE05BEA20DE6F16007FE328 /* CellDequeuingAndRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BE920DE6F16007FE328 /* CellDequeuingAndRegistration.swift */; };
@@ -68,6 +75,12 @@
 		EE5668D820DD90FE0081066D /* JapaneseNumbersUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseNumbersUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5668DA20DD90FE0081066D /* JapaneseNumbersUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseNumbersUnitTests.swift; sourceTree = "<group>"; };
 		EE5668DC20DD90FE0081066D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE93F0B620DF6B49008EA2D7 /* IndividualJapaneseNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualJapaneseNumberView.swift; sourceTree = "<group>"; };
+		EE93F0B820DF6B76008EA2D7 /* IndividualJapaneseNumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndividualJapaneseNumberView.xib; sourceTree = "<group>"; };
+		EE93F0BA20DF70C9008EA2D7 /* IndividualJapaneseNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualJapaneseNumberViewModel.swift; sourceTree = "<group>"; };
+		EE93F0BC20DF7773008EA2D7 /* IndividualJapaneseNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualJapaneseNumberViewController.swift; sourceTree = "<group>"; };
+		EE93F0C020DF812B008EA2D7 /* JapaneseNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseNumberViewModel.swift; sourceTree = "<group>"; };
+		EE93F0C420DF81DF008EA2D7 /* JapaneseNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseNumberView.swift; sourceTree = "<group>"; };
 		EE9A6C8F20DE9CAD00D3E5F6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		EE9E7DD220DE5F0000CFE6ED /* CustomViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewContainer.swift; sourceTree = "<group>"; };
 		EE9E7DD420DE61FE00CFE6ED /* InitialConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialConfiguration.swift; sourceTree = "<group>"; };
@@ -100,6 +113,7 @@
 		EEDA879620DD86250011601F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEDA879920DD86250011601F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEDA879B20DD86250011601F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEDB1F9C20DF832B00FE5694 /* ActivityIndicableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicableView.swift; sourceTree = "<group>"; };
 		EEE05BE420DE6A3A007FE328 /* UIImageViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewConfiguration.swift; sourceTree = "<group>"; };
 		EEE05BE620DE6CF2007FE328 /* CellReuseIdentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReuseIdentification.swift; sourceTree = "<group>"; };
 		EEE05BE920DE6F16007FE328 /* CellDequeuingAndRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDequeuingAndRegistration.swift; sourceTree = "<group>"; };
@@ -157,12 +171,51 @@
 			path = JapaneseNumbersUnitTests;
 			sourceTree = "<group>";
 		};
-		EE9E7DD120DE5AF400CFE6ED /* Single */ = {
+		EE93F0BE20DF80BC008EA2D7 /* JapaneseNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				EEE05BED20DE7A8F007FE328 /* JapaneseNumbersViewModel.swift */,
+				EE93F0BF20DF811B008EA2D7 /* Single */,
+			);
+			path = JapaneseNumbers;
+			sourceTree = "<group>";
+		};
+		EE93F0BF20DF811B008EA2D7 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				EE93F0C020DF812B008EA2D7 /* JapaneseNumberViewModel.swift */,
+				EE93F0BA20DF70C9008EA2D7 /* IndividualJapaneseNumberViewModel.swift */,
+				EE9E7DDA20DE648C00CFE6ED /* ListedJapaneseNumberViewModel.swift */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		EE93F0C220DF818C008EA2D7 /* Listed */ = {
 			isa = PBXGroup;
 			children = (
 				EEB1576E20DE3F9500BA980A /* JapaneseNumberCell.swift */,
 				EEB1576720DE32C200BA980A /* ListedJapaneseNumberView.swift */,
 				EEB1576920DE34B000BA980A /* ListedJapaneseNumberView.xib */,
+			);
+			path = Listed;
+			sourceTree = "<group>";
+		};
+		EE93F0C320DF81B4008EA2D7 /* Individual */ = {
+			isa = PBXGroup;
+			children = (
+				EE93F0B620DF6B49008EA2D7 /* IndividualJapaneseNumberView.swift */,
+				EE93F0B820DF6B76008EA2D7 /* IndividualJapaneseNumberView.xib */,
+				EE93F0BC20DF7773008EA2D7 /* IndividualJapaneseNumberViewController.swift */,
+			);
+			path = Individual;
+			sourceTree = "<group>";
+		};
+		EE9E7DD120DE5AF400CFE6ED /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				EE93F0C420DF81DF008EA2D7 /* JapaneseNumberView.swift */,
+				EE93F0C320DF81B4008EA2D7 /* Individual */,
+				EE93F0C220DF818C008EA2D7 /* Listed */,
 			);
 			path = Single;
 			sourceTree = "<group>";
@@ -179,8 +232,7 @@
 		EE9E7DD920DE642600CFE6ED /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				EEE05BED20DE7A8F007FE328 /* JapaneseNumbersViewModel.swift */,
-				EE9E7DDA20DE648C00CFE6ED /* ListedJapaneseNumberViewModel.swift */,
+				EE93F0BE20DF80BC008EA2D7 /* JapaneseNumbers */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -230,6 +282,7 @@
 		EEB1576420DE317500BA980A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EEDB1F9C20DF832B00FE5694 /* ActivityIndicableView.swift */,
 				EEB1576B20DE3B7F00BA980A /* CustomTableViewCell.swift */,
 				EEB1576520DE318F00BA980A /* CustomView.swift */,
 				EEB1577020DE411700BA980A /* CustomViewController.swift */,
@@ -420,6 +473,7 @@
 				EEDA879A20DD86250011601F /* LaunchScreen.storyboard in Resources */,
 				EEB1577520DE424800BA980A /* JapaneseNumbersView.xib in Resources */,
 				EEDA879720DD86250011601F /* Assets.xcassets in Resources */,
+				EE93F0B920DF6B76008EA2D7 /* IndividualJapaneseNumberView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,14 +550,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE05BE720DE6CF2007FE328 /* CellReuseIdentification.swift in Sources */,
+				EE93F0BB20DF70C9008EA2D7 /* IndividualJapaneseNumberViewModel.swift in Sources */,
 				EEB1576620DE318F00BA980A /* CustomView.swift in Sources */,
 				EEB1575320DE283E00BA980A /* NetworkRepository.swift in Sources */,
+				EE93F0C120DF812B008EA2D7 /* JapaneseNumberViewModel.swift in Sources */,
 				EEB1577320DE41A600BA980A /* JapaneseNumbersView.swift in Sources */,
 				EE9E7DD320DE5F0000CFE6ED /* CustomViewContainer.swift in Sources */,
 				EE9E7DD720DE63A200CFE6ED /* ModelConfiguration.swift in Sources */,
 				EEE05BEA20DE6F16007FE328 /* CellDequeuingAndRegistration.swift in Sources */,
 				EE9E7DDB20DE648C00CFE6ED /* ListedJapaneseNumberViewModel.swift in Sources */,
 				EEB1575B20DE28F000BA980A /* Specification.swift in Sources */,
+				EEDB1F9D20DF832B00FE5694 /* ActivityIndicableView.swift in Sources */,
 				EE9E7DD520DE61FE00CFE6ED /* InitialConfiguration.swift in Sources */,
 				EEDA879220DD86230011601F /* JapaneseNumbersViewController.swift in Sources */,
 				EEB1574920DE188100BA980A /* JapaneseNumber.swift in Sources */,
@@ -519,14 +576,17 @@
 				EEB1576820DE32C200BA980A /* ListedJapaneseNumberView.swift in Sources */,
 				EEB1577120DE411700BA980A /* CustomViewController.swift in Sources */,
 				EEE05BF120DE852B007FE328 /* CellConfiguration.swift in Sources */,
+				EE93F0B720DF6B49008EA2D7 /* IndividualJapaneseNumberView.swift in Sources */,
 				EEB1575820DE28B700BA980A /* RepositoryQueryResult.swift in Sources */,
 				EE9A6C9020DE9CAD00D3E5F6 /* Colors.swift in Sources */,
 				EEB1576120DE2A6800BA980A /* JapaneseNumbersSpecification.swift in Sources */,
 				EEDA879020DD86230011601F /* AppDelegate.swift in Sources */,
+				EE93F0C520DF81DF008EA2D7 /* JapaneseNumberView.swift in Sources */,
 				EEB1575620DE287900BA980A /* NetworkRoute.swift in Sources */,
 				EEB1575020DE1DDD00BA980A /* Repository.swift in Sources */,
 				EEB1577720DE45AF00BA980A /* JapaneseNumbersTableViewDataSourceAndDelegate.swift in Sources */,
 				EEB1575D20DE290900BA980A /* NetworkSpecification.swift in Sources */,
+				EE93F0BD20DF7773008EA2D7 /* IndividualJapaneseNumberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,14 +21,7 @@ final class JapaneseNumbersView: CustomView {
 
     override func addSubviews() {
         addTableView()
-        addActivityIndicatorView()
-    }
-
-    private func addActivityIndicatorView() {
-        let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
-        activityIndicatorView.color = .gray
-        addSubview(activityIndicatorView)
-        self.activityIndicatorView = activityIndicatorView
+        activityIndicatorView = addActivityIndicatorView()
     }
 
     private func addTableView() {
@@ -54,21 +47,6 @@ final class JapaneseNumbersView: CustomView {
         makeConstraintsForTableView()
     }
 
-    private func makeConstraintsForActivityIndicatorView() {
-        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint.activate([.centerX, .centerY].map {
-            .init(
-                item: activityIndicatorView,
-                attribute: $0,
-                relatedBy: .equal,
-                toItem: activityIndicatorView.superview,
-                attribute: $0,
-                multiplier: 1,
-                constant: 0)
-        })
-    }
-
     private func makeConstraintsForTableView() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -85,13 +63,15 @@ final class JapaneseNumbersView: CustomView {
     }
 }
 
+extension JapaneseNumbersView: ActivityIndicableView {}
+
 extension JapaneseNumbersView: ModelConfigurable {
 
     var model: JapaneseNumbersViewModel? { return tableViewDataSourceAndDelegate.model }
 
     func configure(with model: JapaneseNumbersViewModel) {
         model.onItemsFetched = { [unowned self] in
-            self.activityIndicatorView.stopAnimating()
+            self.stopIndicatingActivity()
             self.tableView.reloadData()
         }
 

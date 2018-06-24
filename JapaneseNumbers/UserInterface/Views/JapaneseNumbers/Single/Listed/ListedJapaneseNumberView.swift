@@ -15,46 +15,16 @@ final class ListedJapaneseNumberView: CustomView {
     private(set) weak var image: UIImageView!
     private(set) weak var label: UILabel!
 
-    // MARK: - Adding Subviews
-
     override func addSubviews() {
-        addImage()
-        addLabel()
-    }
-
-    private func addImage() {
-        let image = UIImageView(frame: .zero)
-        addSubview(image)
-        self.image = image
-    }
-
-    private func addLabel() {
-        let label = UILabel(frame: .zero)
-        label.font = .systemFont(ofSize: 28)
-        addSubview(label)
-        self.label = label
+        image = addImage()
+        label = addLabel()
     }
 
     // MARK: - Making Constraints
 
     override func makeConstraints() {
-        makeConstraintsForImage()
+        makeConstraintsForImage(with: [.centerY, .right])
         makeConstraintsForLabel()
-    }
-
-    private func makeConstraintsForImage() {
-        image.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint.activate([.centerY, .right].map {
-            .init(
-                item: image,
-                attribute: $0,
-                relatedBy: .equal,
-                toItem: image.superview,
-                attribute: $0,
-                multiplier: 1,
-                constant: 0)
-        })
     }
 
     private func makeConstraintsForLabel() {
@@ -77,25 +47,12 @@ final class ListedJapaneseNumberView: CustomView {
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
 
-        prepareImageForInterfaceBuilder()
+        prepareImageForInterfaceBuilder(withSize: 50)
         label.text = "100"
     }
-
-    private func prepareImageForInterfaceBuilder() {
-        image.backgroundColor = .lightGray
-
-        NSLayoutConstraint.activate([.height, .width].map {
-            .init(
-                item: image,
-                attribute: $0,
-                relatedBy: .equal,
-                toItem: nil,
-                attribute: .notAnAttribute,
-                multiplier: 1,
-                constant: 50)
-        })
-    }
 }
+
+extension ListedJapaneseNumberView: JapaneseNumberView {}
 
 extension ListedJapaneseNumberView: ModelConfigurable {
 

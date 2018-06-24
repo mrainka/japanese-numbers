@@ -10,9 +10,11 @@ final class JapaneseNumbersViewController: CustomViewController<JapaneseNumbersV
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        customView.activityIndicatorView.startAnimating()
+        startIndicatingActivity()
         model?.fetchItems()
     }
 }
+
+extension JapaneseNumbersViewController: ActivityIndicableView {}
 
 extension JapaneseNumbersViewController: ModelConfigurable {}
