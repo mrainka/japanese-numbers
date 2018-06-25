@@ -47,6 +47,9 @@
 		EEDA879720DD86250011601F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDA879620DD86250011601F /* Assets.xcassets */; };
 		EEDA879A20DD86250011601F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDA879820DD86250011601F /* LaunchScreen.storyboard */; };
 		EEDB1F9D20DF832B00FE5694 /* ActivityIndicableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB1F9C20DF832B00FE5694 /* ActivityIndicableView.swift */; };
+		EEDB1F9F20DF903F00FE5694 /* DetailableJapaneseNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB1F9E20DF903F00FE5694 /* DetailableJapaneseNumbersViewController.swift */; };
+		EEDB1FA120DF92E700FE5694 /* DetailableJapaneseNumbersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB1FA020DF92E700FE5694 /* DetailableJapaneseNumbersViewModel.swift */; };
+		EEDB738920E17390007F7772 /* PortraitCompactHorizontalSizeKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB738820E17390007F7772 /* PortraitCompactHorizontalSizeKeeper.swift */; };
 		EEE05BE520DE6A3A007FE328 /* UIImageViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BE420DE6A3A007FE328 /* UIImageViewConfiguration.swift */; };
 		EEE05BE720DE6CF2007FE328 /* CellReuseIdentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BE620DE6CF2007FE328 /* CellReuseIdentification.swift */; };
 		EEE05BEA20DE6F16007FE328 /* CellDequeuingAndRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE05BE920DE6F16007FE328 /* CellDequeuingAndRegistration.swift */; };
@@ -114,6 +117,9 @@
 		EEDA879920DD86250011601F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEDA879B20DD86250011601F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEDB1F9C20DF832B00FE5694 /* ActivityIndicableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicableView.swift; sourceTree = "<group>"; };
+		EEDB1F9E20DF903F00FE5694 /* DetailableJapaneseNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailableJapaneseNumbersViewController.swift; sourceTree = "<group>"; };
+		EEDB1FA020DF92E700FE5694 /* DetailableJapaneseNumbersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailableJapaneseNumbersViewModel.swift; sourceTree = "<group>"; };
+		EEDB738820E17390007F7772 /* PortraitCompactHorizontalSizeKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitCompactHorizontalSizeKeeper.swift; sourceTree = "<group>"; };
 		EEE05BE420DE6A3A007FE328 /* UIImageViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewConfiguration.swift; sourceTree = "<group>"; };
 		EEE05BE620DE6CF2007FE328 /* CellReuseIdentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReuseIdentification.swift; sourceTree = "<group>"; };
 		EEE05BE920DE6F16007FE328 /* CellDequeuingAndRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDequeuingAndRegistration.swift; sourceTree = "<group>"; };
@@ -174,6 +180,7 @@
 		EE93F0BE20DF80BC008EA2D7 /* JapaneseNumbers */ = {
 			isa = PBXGroup;
 			children = (
+				EEDB1FA020DF92E700FE5694 /* DetailableJapaneseNumbersViewModel.swift */,
 				EEE05BED20DE7A8F007FE328 /* JapaneseNumbersViewModel.swift */,
 				EE93F0BF20DF811B008EA2D7 /* Single */,
 			);
@@ -287,6 +294,7 @@
 				EEB1576520DE318F00BA980A /* CustomView.swift */,
 				EEB1577020DE411700BA980A /* CustomViewController.swift */,
 				EEB1576D20DE3F5900BA980A /* JapaneseNumbers */,
+				EEDB738820E17390007F7772 /* PortraitCompactHorizontalSizeKeeper.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +302,7 @@
 		EEB1576D20DE3F5900BA980A /* JapaneseNumbers */ = {
 			isa = PBXGroup;
 			children = (
+				EEDB1F9E20DF903F00FE5694 /* DetailableJapaneseNumbersViewController.swift */,
 				EEB1577620DE45AF00BA980A /* JapaneseNumbersTableViewDataSourceAndDelegate.swift */,
 				EEB1577220DE41A600BA980A /* JapaneseNumbersView.swift */,
 				EEB1577420DE424800BA980A /* JapaneseNumbersView.xib */,
@@ -565,6 +574,9 @@
 				EEDA879220DD86230011601F /* JapaneseNumbersViewController.swift in Sources */,
 				EEB1574920DE188100BA980A /* JapaneseNumber.swift in Sources */,
 				EEB1574B20DE18E300BA980A /* ListedJapaneseNumber.swift in Sources */,
+				EEDB738920E17390007F7772 /* PortraitCompactHorizontalSizeKeeper.swift in Sources */,
+				EEDB1F9F20DF903F00FE5694 /* DetailableJapaneseNumbersViewController.swift in Sources */,
+				EEDB1FA120DF92E700FE5694 /* DetailableJapaneseNumbersViewModel.swift in Sources */,
 				EEE05BE520DE6A3A007FE328 /* UIImageViewConfiguration.swift in Sources */,
 				EEB1576320DE2AD000BA980A /* JapaneseNumberSpecification.swift in Sources */,
 				EEB1574D20DE1B7600BA980A /* IndividualJapaneseNumber.swift in Sources */,

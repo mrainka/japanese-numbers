@@ -10,8 +10,14 @@ final class JapaneseNumbersViewController: CustomViewController<JapaneseNumbersV
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
         startIndicatingActivity()
         model?.fetchItems()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
     }
 }
 

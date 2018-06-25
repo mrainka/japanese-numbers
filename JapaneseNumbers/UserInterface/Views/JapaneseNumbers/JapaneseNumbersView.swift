@@ -70,9 +70,15 @@ extension JapaneseNumbersView: ModelConfigurable {
     var model: JapaneseNumbersViewModel? { return tableViewDataSourceAndDelegate.model }
 
     func configure(with model: JapaneseNumbersViewModel) {
-        model.onItemsFetched = { [unowned self] in
+        model.onItemSelected.append { [unowned self] in
+            self.tableView.selectRow(at: self.model?.indexPath(ofCellFor: $0), animated: false, scrollPosition: .none)
+        }
+
+        model.onItemsFetched = { [weak self] in
+            guard let `self` = self else { return }
             self.stopIndicatingActivity()
             self.tableView.reloadData()
+            self.model?.onItemsShowed?()
         }
 
         tableViewDataSourceAndDelegate.configure(with: model)

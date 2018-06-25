@@ -15,12 +15,23 @@ struct ListedJapaneseNumberViewModel {
     let imageURL: URL?
     let label: String
 
+    let name: String
+
     init(_ number: ListedJapaneseNumber) {
         imageURL = number.imageURL
         label = number.name
+
+        name = number.name
     }
 }
 
 extension ListedJapaneseNumberViewModel: CellReuseIdentifiable {}
+
+extension ListedJapaneseNumberViewModel: Equatable {
+
+    static func == (lhs: ListedJapaneseNumberViewModel, rhs: ListedJapaneseNumberViewModel) -> Bool {
+        return lhs.name == rhs.name
+    }
+}
 
 extension ListedJapaneseNumberViewModel: JapaneseNumberViewModel {}

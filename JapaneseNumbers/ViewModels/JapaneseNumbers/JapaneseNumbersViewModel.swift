@@ -12,7 +12,11 @@ final class JapaneseNumbersViewModel {
 
     private(set) var items = [ListedJapaneseNumberViewModel]()
 
+    private(set) var isItemSelected = false
+    var onItemSelected = [((ListedJapaneseNumberViewModel) -> Void)]()
+
     var onItemsFetched: (() -> Void)?
+    var onItemsShowed: (() -> Void)?
 
     private let repository: AnyRepository<[ListedJapaneseNumber]>
 
@@ -40,4 +44,10 @@ final class JapaneseNumbersViewModel {
     }
 }
 
-extension JapaneseNumbersViewModel: Itemized {}
+extension JapaneseNumbersViewModel: Itemized {
+
+    func select(_ item: ListedJapaneseNumberViewModel) {
+        isItemSelected = true
+        onItemSelected.forEach { $0(item) }
+    }
+}

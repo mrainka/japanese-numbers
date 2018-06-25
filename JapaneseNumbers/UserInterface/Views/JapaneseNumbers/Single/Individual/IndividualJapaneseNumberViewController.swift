@@ -13,6 +13,11 @@ final class IndividualJapaneseNumberViewController: CustomViewController<Individ
         startIndicatingActivity()
         model?.fetchData()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
 }
 
 extension IndividualJapaneseNumberViewController: ActivityIndicableView {}

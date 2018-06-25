@@ -15,11 +15,17 @@ final class AppDelegate: UIResponder {
 
     private func addWindow() {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let rootView = JapaneseNumbersViewController()
-        rootView.configure(with: .init())
-        window.rootViewController = rootView
+        window.rootViewController = type(of: self).rootView()
         window.makeKeyAndVisible()
         self.window = window
+    }
+
+    private static func rootView() -> UIViewController {
+        let rootView = PortraitCompactHorizontalSizeKeeper()
+        let detailableJapaneseNumbersView = DetailableJapaneseNumbersViewController()
+        detailableJapaneseNumbersView.configure(with: .init())
+        rootView.add(detailableJapaneseNumbersView)
+        return rootView
     }
 }
 

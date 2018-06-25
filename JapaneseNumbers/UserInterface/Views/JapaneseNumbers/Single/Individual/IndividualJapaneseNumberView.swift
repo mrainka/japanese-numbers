@@ -75,7 +75,9 @@ extension IndividualJapaneseNumberView: JapaneseNumberView {}
 extension IndividualJapaneseNumberView: ModelConfigurable {
 
     func configure(with model: IndividualJapaneseNumberViewModel) {
-        model.onDataFetched = { [unowned self] in
+        model.onDataFetched = { [weak self] in
+            guard let `self` = self else { return }
+
             self.stopIndicatingActivity()
 
             self.image.configure(with: model.imageURL)
